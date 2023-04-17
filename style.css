@@ -1,7 +1,14 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* CSS */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 html, body{
@@ -46,6 +53,7 @@ html, body{
     height: 80px;
     position: relative;
     z-index: 9;
+    margin-top: 10px;
 }
 
 /* Tamanho Fontes */
@@ -124,6 +132,7 @@ button{
     color: #ffffff;
     font-size: 14px;
     border: none;
+    cursor: pointer;
     transition: 0.3s ease;
 }
 
@@ -182,6 +191,55 @@ button:hover{
     display: flex;
 }
 
+/* Desktop-Menu */
+
+.desktop-menu ul{
+    display: flex;
+}
+
+.desktop-menu ul li{
+    padding: 0 25px;
+    list-style-type: none;
+}
+
+.desktop-menu ul li a{
+    text-decoration: none;
+    color: #545454;
+    font-size: 18px;
+}
+
+.desktop-menu ul li a:hover{
+    color: #fa5e00;
+    font-weight: 500;
+}
+
+/* button to-top */
+
+#back-to-top{
+    position: fixed;
+    bottom: 2px;
+    right:  20px;
+    padding: 10px 15px;
+    background: #2b2b2b;
+}
+
+/* Scrollbar Personalizada */
+
+body::-webkit-scrollbar{
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track{
+    background: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #2b2b2b;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+}
+
+
 /* home */
 
 #home .container{
@@ -192,4 +250,117 @@ button:hover{
 #home .right{
     flex-direction: column;
     align-items: flex-end;
+}
+
+#home .right h1{
+    text-align: end;
+}
+
+#home .right h2{
+    text-align: end;
+    margin-top: 20px;
+}
+
+#home .right p{
+    text-align: end;
+    margin-top: 20px;
+}
+
+#home .right button{
+    margin-top: 30px;
+}
+
+/* About */
+
+#about {
+    position: relative;
+}
+#about .blur{
+    width: 100%;    
+    height: 30px;
+    background-color: rgb(233 232 232);
+    position: absolute;
+    opacity: 0.3;
+    top: -15px;
+    left: 0;
+    filter: blur(4px);
+}
+
+
+#about .left{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#about .left span{
+    margin-top: 20px;
+}
+
+#about .left h2{
+    margin-top: 20px;
+}
+
+#about .left p{
+    margin-top: 20px;
+}
+
+#about .left button{
+    margin-top: 20px;
+}
+
+#about .right img{
+    border-radius: 30px;
+    
+}
+
+
+/* Service */
+
+#service {
+    position: relative;
+}
+
+#service .blur{
+    width: 100%;    
+    height: 30px;
+    background-color: rgb(233 232 232);
+    position: absolute;
+    opacity: 0.3;
+    top: -15px;
+    left: 0;
+    filter: blur(4px);
+}
+
+#service .box i{
+    border: 4px solid #2b2b2b;
+    border-radius: 30px;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+#service .box h2{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#service .box p{
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Menu */
+
+#menu {
+    position: relative;
+}
+
+#menu .blur{
+    width: 100%;    
+    height: 30px;
+    background-color: rgb(233 232 232);
+    position: absolute;
+    opacity: 0.3;
+    top: -15px;
+    left: 0;
+    filter: blur(4px);
 }

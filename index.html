@@ -6,17 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Food FRONT</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
+
+  <!-- Home -->
+
   <header class="max-width bg"id = 'home'>
     <div class="container">
       <div class="menu">
         <div class="logo"></div>
         <div class="desktop-menu">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Serviço</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#service">Serviço</a></li>
             <li><a href="#">Menu</a></li>
             <li><a href="#">Contato</a></li>
           </ul>
@@ -30,9 +34,85 @@
           <h1 class="color-laranja text-gd">My New Restaurant</h1>
           <h2 class="color-cinza text-md">Experimente a melhor comida da região</h2>
           <p class="text-pq">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in odio eu erat consequat maximus non vel diam. Sed sem.</p>
+          <button>Ver Menu</button>
         </div>
       </div>
     </div>
+    <button id="back-to-top">^</button>
   </header>
+
+  <!-- Sobre -->
+
+  <section class="max-whidht bg" id="about">
+    <div class="blur"></div>
+    <div class="container">
+      <div class="call">
+        <div class="left">
+          <span class="text-title color-laranja">Sobre Nós</span>
+          <h2 class="text-md color-cinza">Nós cozinhamos as comidas mais saborosas de todo o Nordeste</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus lectus sed neque posuere, nec tincidunt elit bibendum.
+             Sed sit amet lacus a ex laoreet interdum.</p>
+          <button>Saiba Mais</button>
+        </div>
+        <div class="right">
+          <img src="image/03.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service -->
+  <section class="max-whidht bg" id="service">
+    <div class="blur"></div>
+    <div class="container">
+      <div class="content">
+        <div class="titulo">
+          <span class="text-title color-laranja">Ofertas</span>
+          <h2 class ="text-md color-cinza">Nossos Serviços</h2>
+        </div>
+        <div class="down">
+          <div class="box">
+            <i class="fa fa-cutlery text-gd color-laranja"></i>
+            <h2>A Melhor Comida </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, a!</p>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-pizza-slice text-gd color-laranja"></i>
+            <h2>Comida Rápida</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos inventore deleniti reprehenderit! Eveniet, temporibus error!</p>
+          </div>
+          <div class="box">
+            <i class="fa fa-motorcycle text-gd color-laranja"></i>
+            <h2>Entrega</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, aut.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+
+  <section class="max-whidht bg" id="menu">
+    <div class="blur"></div>
+    <div class="comtainer">
+      <div class="content">
+        <div class="titulo">
+          <span class="text-title color-laranja">Pratos do Dia</span>
+          <h2 class ="text-md color-cinza">Cardápio</h2>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    //Botão back-to-top
+    var btn =document.querySelector("#back-to-top")
+    btn.addEventListener("click", function(){
+        window.scrollTo(0,0)
+    })
+  </script>
+
 </body>
 </html>
