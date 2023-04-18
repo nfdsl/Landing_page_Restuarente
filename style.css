@@ -3,6 +3,9 @@
 
 
 /* CSS */
+html{
+    scroll-behavior: smooth;
+}
 
 *{
     margin: 0;
@@ -127,6 +130,24 @@ img{
 
 /* Botão */
 
+
+.button{
+    padding: 10px;
+    background: #fa5e00;
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.button:hover{
+    border: 1px solid #fa5e00;
+    background: #ffffff;
+    color: #fa5e00;
+}
+
 button{
     padding: 10px;
     background: #fa5e00;
@@ -135,6 +156,7 @@ button{
     border: none;
     cursor: pointer;
     transition: 0.3s ease;
+    text-decoration: none;
 }
 
 button:hover{
@@ -142,6 +164,8 @@ button:hover{
     background: #ffffff;
     color: #fa5e00;
 }
+
+
 
 /* Content */
 
@@ -466,3 +490,5 @@ footer .container img{
 footer .container p{
     font-weight: 600;
 }
+
+/* Responsive */
