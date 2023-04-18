@@ -18,6 +18,7 @@ html, body{
 .max-whidht {
     width: 100%;
     min-width: 100vh;
+    min-height: 100vh;
 }
 
 .bg{
@@ -215,7 +216,7 @@ button:hover{
 
 /* button to-top */
 
-#back-to-top{
+#back-to-top {
     position: fixed;
     bottom: 2px;
     right:  20px;
@@ -363,4 +364,105 @@ body::-webkit-scrollbar-thumb{
     top: -15px;
     left: 0;
     filter: blur(4px);
+}
+
+#menu .box{
+    background-color: #ffffff80;
+    border-radius: 20px;
+    border: 5px solid #fa5e00;
+    margin: 10px;
+    min-width: 300px;
+}
+
+#menu .box img{
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid #2b2b2b;
+}
+
+#menu .box  h2{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#menu .box p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #545454;
+    text-align: center;
+}
+
+#menu .box .text-md{
+    font-size: 20px;
+}
+
+/* Contact */
+
+#contact {
+    position: relative;
+}
+
+#contact .blur{
+    width: 100%;    
+    height: 30px;
+    background-color: rgb(233 232 232);
+    position: absolute;
+    opacity: 0.3;
+    top: -15px;
+    left: 0;
+    filter: blur(4px);
+}
+
+
+#contact .left{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#contact .left h2{
+    margin-top: 20px;
+}
+
+#contact .left p{
+    margin-top: 20px;
+}
+
+#contact .left .info{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#contact .left .info img{
+    width: 123px;
+    cursor: pointer;
+}
+
+#contact .right img{
+    width: 50%;
+}
+
+
+/* Footer */
+
+footer .container{
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .container img{
+    width: 60px;
+    object-fit: contain;
+}
+
+footer .container p{
+    font-weight: 600;
 }

@@ -21,8 +21,8 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">Sobre</a></li>
             <li><a href="#service">Serviço</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contato</a></li>
           </ul>
         </div>
       </div>
@@ -38,7 +38,6 @@
         </div>
       </div>
     </div>
-    <button id="back-to-top">^</button>
   </header>
 
   <!-- Sobre -->
@@ -95,7 +94,7 @@
 
   <section class="max-whidht bg" id="menu">
     <div class="blur"></div>
-    <div class="comtainer">
+    <div class="container">
       <div class="content">
         <div class="titulo">
           <span class="text-title color-laranja">Pratos do Dia</span>
@@ -109,16 +108,16 @@
             <p>R$ 17,50</p>
           </div>
           <div class="box">
-            <img src="image/04.jpg" alt="">
-            <h2 class="color-laranja">Banoffe de chocolate ao leite</h2>
-            <p class="text-md">Prato Delicioso</p>
-            <p>R$ 17,50</p>
+            <img src="image/05.jpg" alt="">
+            <h2 class="color-laranja">Hambúrguer Artesanal</h2>
+            <p class="text-md">O mais renomado da região</p>
+            <p>R$ 27,00</p>
           </div>
           <div class="box">
-            <img src="image/04.jpg" alt="">
-            <h2 class="color-laranja">Banoffe de chocolate ao leite</h2>
-            <p class="text-md">Prato Delicioso</p>
-            <p>R$ 17,50</p>
+            <img src="image/06.jpg" alt="">
+            <h2 class="color-laranja">Pizza Tradicional</h2>
+            <p class="text-md">O mais pedido da casa</p>
+            <p>R$ 55,00</p>
           </div>
         </div>
       </div>
@@ -126,13 +125,45 @@
 
   </section>
 
+  <!-- Contato -->
+
+  <section class="max-whidht bg" id="contact">
+    <div class="blur"></div>
+    <div class="container">
+      <div class="call">
+        <div class="left">
+          <span class="text-title color-laranja">App</span>
+          <h2 class="text-md color-cinza">O aplicativo está disponível</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque officiis voluptatibus esse saepe quia sunt sed illo laborum veniam possimus.</p>
+            <div class="info">
+              <img src="image/apple.png" alt="">
+              <img src="image/google.png" alt="">
+            </div>
+        </div>
+        <div class="right">
+            <img src="image/iphone.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+
+  <footer>
+    <div class="container">
+      <img src="image/logo.png" alt="">
+      <p class="text-pq">Copyright 2023 <span class="color-laranja">FRONT</span> All Rights Reserved</p>
+      <p class="text-pq">Tel: 3238-2312</p>
+    </div>
+  </footer>
+
+  <!-- Botão back-to-top -->
+
+  <button id="back-to-top">^</button>
   <script>
-    //Botão back-to-top
     var btn =document.querySelector("#back-to-top")
     btn.addEventListener("click", function(){
         window.scrollTo(0,0)
     })
   </script>
-
 </body>
 </html>
